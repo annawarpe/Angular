@@ -1,0 +1,42 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
+</script>
+<body ng-app="" ng-init="a="'' bgcolor="pink"text-align="center">
+<form>
+show form:<input type="checkbox" ng-model="check">
+<div ng-show="check">
+<h1><marquee direction="right" style="color:red">Registration form</marquee></h1>
+<form>
+<div>  First Name: <input type="text" ng-model="firstname" style="background-color:white"><br><br>
+second Name: <input type="text" ng-model="secondname" style="background-color:white"><br>
+<br>
+last Name: <input type="text" ng-model="lastname" style="background-color:white"><br><br>
+</form>
+<h1> full name:{{firstname +" "+secondname+" "+lastname}}</h1>
+Enter your favorite color:<input style="background-color:{{a}}" ng-model="a" placeholder="color"><br><br>
+<input type="checkbox" ng-model="ab">
+<select ng-disabled="ab">
+<option>Select Gender</option>
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select><br><br>
+<input type="checkbox" ng-model="all">
+<select ng-disabled="all">
+<option>Select cource</option>
+<option>FYBCA</option>
+<option>SYBCA</option>
+<option>TYBCA</option>
+</select><br><br>
+Birth Date:<input type="date"><br><br>
+password:<input type="password" placeholder="Password"><br><br>
+E-mail:<input type="e-mail" placeholder="email"><br><br>
+Address:<input type="textarea" size="50px" height="50px" placeholder="Address"><br><br>
+<button style="background-color:red">cancel</button>
+<button style="background-color:lightgreen">submit</button>
+<button style="background-color:darkgreen">Next</button>
+</form>
+</div>
+</div>
+</body>
+</html>
